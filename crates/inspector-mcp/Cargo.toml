@@ -1,0 +1,25 @@
+[package]
+name = "inspector-mcp"
+version = "0.1.0"
+edition = "2021"
+description = "Read-only Tokio runtime investigation MCP server (stdio)"
+license = "MIT"
+repository = "https://github.com/RajKavadia/tokio-mcp-inspector"
+keywords = ["mcp", "tokio", "diagnostics", "async"]
+
+[[bin]]
+name = "inspector-mcp"
+path = "src/main.rs"
+
+[dependencies]
+inspector-core = { path = "../inspector-core" }
+inspector-collector = { path = "../inspector-collector" }
+inspector-analysis = { path = "../inspector-analysis" }
+tokio = { workspace = true }
+anyhow = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+rmcp = { workspace = true }
+clap = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }

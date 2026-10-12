@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "observation_id": "obs-baseline-normal",
+  "captured_at_unix_ms": 0,
+  "monotonic_elapsed_ms": 0,
+  "collection_interval_ms": 5000,
+  "source": { "console_addr": "127.0.0.1:6669", "service_name": "normal_service" },
+  "completeness": { "partial": false, "missing_fields": [], "warnings": [] },
+  "data": {
+    "overview": {
+      "service_name": "normal_service",
+      "console_addr": "127.0.0.1:6669",
+      "active_tasks": 12,
+      "completed_tasks": null,
+      "tasks_truncated": false,
+      "metric_names": ["request_latency_ms"]
+    },
+    "tasks": [],
+    "resources": [],
+    "metrics": [
+      {
+        "name": "request_latency_ms",
+        "kind": { "kind": "Histogram", "count": 120, "sum": 4800.0, "p50": 40.0, "p95": 60.0, "p99": 90.0 },
+        "unit": "ms",
+        "observed_at_unix_ms": 0
+      }
+    ]
+  }
+}

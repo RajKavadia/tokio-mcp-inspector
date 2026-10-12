@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "observation_id": "obs-current-slow",
+  "captured_at_unix_ms": 30000,
+  "monotonic_elapsed_ms": 30000,
+  "collection_interval_ms": 5000,
+  "source": { "console_addr": "127.0.0.1:6670", "service_name": "slow_service" },
+  "completeness": {
+    "partial": true,
+    "missing_fields": ["task.busy_ns"],
+    "warnings": []
+  },
+  "data": {
+    "overview": {
+      "service_name": "slow_service",
+      "console_addr": "127.0.0.1:6670",
+      "active_tasks": 142,
+      "completed_tasks": null,
+      "tasks_truncated": false,
+      "metric_names": ["request_latency_ms"]
+    },
+    "tasks": [],
+    "resources": [],
+    "metrics": [
+      {
+        "name": "request_latency_ms",
+        "kind": { "kind": "Histogram", "count": 120, "sum": 37200.0, "p50": 310.0, "p95": 520.0, "p99": 900.0 },
+        "unit": "ms",
+        "observed_at_unix_ms": 30000
+      }
+    ]
+  }
+}

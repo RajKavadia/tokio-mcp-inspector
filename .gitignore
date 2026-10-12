@@ -1,0 +1,19 @@
+# Build output
+/target/
+
+# Excluded from this repo by policy (demos stay local)
+/examples/
+
+# Rust
+**/*.rs.bk
+*.pdb
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+.DS_Store
+
+# opencode local state (keep opencode.json config, ignore runtime)
+.opencode/
