@@ -12,9 +12,9 @@ name = "inspector-mcp"
 path = "src/main.rs"
 
 [dependencies]
-inspector-core = { path = "../inspector-core" }
-inspector-collector = { path = "../inspector-collector" }
-inspector-analysis = { path = "../inspector-analysis" }
+inspector-core = { path = "../inspector-core", version = "0.1.0" }
+inspector-collector = { path = "../inspector-collector", version = "0.1.0" }
+inspector-analysis = { path = "../inspector-analysis", version = "0.1.0" }
 tokio = { workspace = true }
 anyhow = { workspace = true }
 serde = { workspace = true }

@@ -7,7 +7,7 @@ license = "MIT"
 repository = "https://github.com/RajKavadia/tokio-mcp-inspector"
 
 [dependencies]
-inspector-core = { path = "../inspector-core" }
+inspector-core = { path = "../inspector-core", version = "0.1.0" }
 tokio = { workspace = true }
 tonic = { workspace = true }
 console-api = { workspace = true }
