@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.rajkavadia/tokio-mcp-inspector",
+  "title": "Tokio MCP Inspector",
+  "description": "Read-only Tokio runtime diagnostics: task telemetry with evidence-backed latency analysis.",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/RajKavadia/tokio-mcp-inspector",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "cargo",
+      "registryBaseUrl": "https://crates.io",
+      "identifier": "inspector-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
